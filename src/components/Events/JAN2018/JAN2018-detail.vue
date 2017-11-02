@@ -3,10 +3,27 @@
     <div class="row schochi-galvanik-container">
       <div class="column start-xs">
         <h1>Schochi x Galvanik</h1>
-        <section>
-          <p>
-          Entry: 15.-
-          </p>
+        <section class="column">
+          <div>
+          Pre Sale: CHF 10.-
+          </div>
+          <div>
+          Evening Sale: CHF 15.-
+          </div>
+          <div>
+              Age: 18
+          </div>
+          <div>
+              Music: House, Techno
+          </div>
+          <div>
+              DJs:
+              <ul>
+                  <li>
+                      Nicola Gantner (24:00-01:00)
+                  </li>
+              </ul>
+          </div>
         </section>
       </div>
     </div>
@@ -74,17 +91,16 @@ export default {
         height: calc(60vh - 2px);
     }
     &-container {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 18px;
         padding: 20px;
         margin-right: 0;
         margin-left: 0;
     }
     h1 {
         margin: 0;
+        margin-bottom: 15px;
     }
-}
-p {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 18px
 }
 </style>
 
