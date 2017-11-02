@@ -12,7 +12,7 @@
 
 <script>
 import VanillaTilt from 'vanilla-tilt';
-import isMobile from '../shared/isMobile';
+import isMobile from '../../shared/isMobile';
 
 export default {
   name: 'JAN2018',
