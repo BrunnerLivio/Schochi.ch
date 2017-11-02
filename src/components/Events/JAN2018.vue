@@ -12,20 +12,23 @@
 
 <script>
 import VanillaTilt from 'vanilla-tilt';
+import isMobile from '../shared/isMobile';
 
 export default {
   name: 'JAN2018',
   mounted() {
-    VanillaTilt.init(document.querySelector('.schochi-galvanik'), {
-      max: 15,
-      speed: 400,
-    });
+    if (!isMobile()) {
+      VanillaTilt.init(document.querySelector('.schochi-galvanik'), {
+        max: 15,
+        speed: 400,
+      });
+    }
   },
 };
 </script>
 <style lang="scss" scoped>
-$articleHeight: 400px;
-$articleWidth: 400px;
+$articleHeight: 300px;
+$articleWidth: 300px;
 .schochi-galvanik {
   width: $articleHeight;
   height: $articleWidth;
@@ -48,7 +51,7 @@ $articleWidth: 400px;
     .inner-box {
         h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 40px;
+            font-size: 30px;
             margin: 10px;
             color: #181818;
         }
