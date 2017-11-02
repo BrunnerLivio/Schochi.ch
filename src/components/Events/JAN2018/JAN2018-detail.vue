@@ -58,13 +58,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$sm: 48em;
-$md: 64em;
-$lg: 75em;
+@import '../../../style/theme.scss';
 
-$break-sm: only screen and (min-width: $sm);
-$break-md: only screen and (min-width: $md);
-$break-lg: only screen and (min-width: $lg);
 .schochi-galvanik {
     color: rgba(255,255,255,0.9);
     position: absolute;

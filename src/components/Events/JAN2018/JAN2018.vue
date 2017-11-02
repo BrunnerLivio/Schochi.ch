@@ -27,14 +27,22 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$articleHeight: 300px;
-$articleWidth: 300px;
+@import '../../../style/theme.scss';
+
+$articleHeightXs: 300px;
+$articleWidthXs: 300px;
+$articleHeightMd: 400px;
+$articleWidthMd: 400px;
 .schochi-galvanik {
-  width: $articleHeight;
-  height: $articleWidth;
+  width: $articleHeightXs;
+  height: $articleWidthXs;
   background: #FFB5A8;
   text-align: center;
   transform-style: preserve-3d;
+  @media #{$break-md} {
+    width: $articleHeightMd;
+    height: $articleWidthMd;
+  }
 }
 
 .divider {
@@ -45,15 +53,22 @@ $articleWidth: 300px;
 }
 .box {
     border: 2px solid #181818;
-    width: $articleHeight - 60;
-    height: $articleWidth - 60;
+    width: $articleHeightXs - 60;
+    height: $articleWidthXs - 60;
     transform: translateZ(40px);
+    @media #{$break-md} {
+        width: $articleHeightMd - 60;
+        height: $articleWidthMd - 60;
+    }
     .inner-box {
         h2 {
             font-family: 'Playfair Display', serif;
             font-size: 30px;
             margin: 10px;
             color: #181818;
+            @media #{$break-md} {
+                font-size: 40px;
+            }
         }
     }
 }
