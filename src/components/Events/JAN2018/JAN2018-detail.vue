@@ -88,7 +88,8 @@ $break-lg: only screen and (min-width: $lg);
     }
 }
 p {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px
 }
 </style>
 
