@@ -4,7 +4,7 @@
       <article>
         <div class="date">
           <span class="month">JANUARY</span>
-          <span class="day">Fri 12</span>
+          <span class="day">FRI 12</span>
         </div>
         <router-link to="january2018">
           <jan2018></jan2018>
@@ -44,7 +44,7 @@ article {
     .day {
       margin-left: -5px;
       color: rgba(255, 255, 255, 0.8);
-      font-size: 26px;
+      font-size: 20px;
     }
   }
 }

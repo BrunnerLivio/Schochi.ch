@@ -20,14 +20,14 @@
           </section>
           <section class="description">
             <p>
-              We sell alcohol. You can also bring your own. If you want to come with friends,
+              We have an open bar. You are not allowed to bring your own alcohol. If you want to come with friends,
               contact us first. No one gets in the club without an invitation.
             </p>
           </section>
 
           <section>
               <span>Lineup:</span>
-              <ul>
+              <!-- <ul>
                   <li v-for="dj in djs" v-bind:key="dj.name">
                     <div>
                       <strong>{{ dj.name }}</strong> 
@@ -37,7 +37,8 @@
                     </div>
                     <span>{{ dj.time }}</span>
                   </li>
-              </ul>
+              </ul> -->
+              <span>To be announced</span>
           </section>
         </section>
       </div>
@@ -53,26 +54,6 @@ export default {
   data() {
     return {
       djs: [
-        {
-          name: 'Nicola Gantner',
-          genre: 'House',
-          time: '00:00 - 01:00',
-        },
-        {
-          name: 'Migu Brunner',
-          genre: 'House',
-          time: '01:00 - 02:00',
-        },
-        {
-          name: 'Florin Simmen',
-          genre: 'Jazz',
-          time: '04:20 - 16:20',
-        },
-        {
-          name: 'DJ Bobo',
-          genre: 'Vaporwave',
-          time: '08:00 - 23:00',
-        },
         {
           name: 'Mr. Da-Nos',
           genre: 'House',
