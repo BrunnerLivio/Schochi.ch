@@ -1,29 +1,44 @@
 <template>
   <main class="schochi-galvanik">
     <div class="row schochi-galvanik-container">
-      <div class="column start-xs">
+      <div class="column start-xs stretch">
         <h1>Schochi x Galvanik</h1>
         <section class="column">
-          <div>
-          Pre Sale: CHF 10.-
-          </div>
-          <div>
-          Evening Sale: CHF 15.-
-          </div>
-          <div>
-              Age: 18
-          </div>
-          <div>
-              Music: House, Techno
-          </div>
-          <div>
-              DJs:
+          <section class="meta-info">
+            <div>
+              Pre Sale: CHF 10.-
+            </div>
+            <div>
+              Evening Sale: CHF 15.-
+            </div>
+            <div>
+                Age: 18
+            </div>
+            <div>
+              Location: <a href="https://www.google.ch/maps/place/Kulturzentrum+Galvanik+Zug/@47.1806677,8.4793163,15.63z/data=!4m5!3m4!1s0x4790008287ec52bb:0xe036ad5c7aa272f4!8m2!3d47.1815066!4d8.4841381">Galvanik, Zug</a>
+            </div>
+          </section>
+          <section class="description">
+            <p>
+              We sell alcohol there. You can also bring your own. If you want to come with friends,
+              contact us first. No one gets in the club without an invitation.
+            </p>
+          </section>
+
+          <section>
+              <span>Lineup:</span>
               <ul>
-                  <li>
-                      Nicola Gantner (24:00-01:00)
+                  <li v-for="dj in djs" v-bind:key="dj.name">
+                    <div>
+                      <strong>{{ dj.name }}</strong> 
+                    </div>
+                    <div>
+                      <span class="genre">{{ dj.genre }}</span>
+                    </div>
+                    <span>{{ dj.time }}</span>
                   </li>
               </ul>
-          </div>
+          </section>
         </section>
       </div>
     </div>
@@ -35,6 +50,27 @@ import isMobile from '../../shared/isMobile';
 
 export default {
   name: 'JAN2018-detail',
+  data() {
+    return {
+      djs: [
+        {
+          name: 'Nicola Gantner',
+          genre: 'House',
+          time: '00:00 - 01:00',
+        },
+        {
+          name: 'Migu Brunner',
+          genre: 'House',
+          time: '01:00 - 02:00',
+        },
+        {
+          name: 'Florin Simmen',
+          genre: 'Jazz',
+          time: '04:20-16:20',
+        },
+      ],
+    };
+  },
   mounted() {
     window.document.body.style.background = '#FFB5A8';
     const lines = [
@@ -85,21 +121,58 @@ export default {
     height: calc(80vh - 2px);
     left: calc(10vw + 2px);
     width: calc(80vw - 2px);
+    overflow-y: auto;
+    a {
+      color: rgba(255,255,255,0.9);
+      &:hover {
+        color: rgba(255,255,255,1);       
+      }
+    }
     @media #{$break-md} {
         left: calc(10vw + 2px);
         width: calc(40vw - 2px);
         height: calc(60vh - 2px);
     }
+    .meta-info {
+      margin-bottom: 20px;
+    }
     &-container {
         font-family: 'Roboto Mono', monospace;
-        font-size: 18px;
         padding: 20px;
         margin-right: 0;
         margin-left: 0;
+        font-size: 16px;
+        @media #{$break-md} {
+          font-size: 18px;
+        }
+        ul {
+          padding-left: 0px;
+          list-style: none;
+          text-align: center;
+          margin-top: -20px;
+          @media #{$break-md} {
+            text-align: start;
+          }  
+          li {
+            margin-top: 20px;
+            .genre {
+              font-style: italic;
+            }
+          }
+        }
     }
     h1 {
         margin: 0;
         margin-bottom: 15px;
+        font-size: 20px;
+        text-align: center;
+        @media #{$break-md} {
+          font-size: 40px;
+          text-align: start;
+        }
+    }
+    .stretch {
+      width: 100%;
     }
 }
 </style>
