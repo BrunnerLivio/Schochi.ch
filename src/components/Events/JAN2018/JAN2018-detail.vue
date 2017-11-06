@@ -15,12 +15,12 @@
                 Age: 18
             </div>
             <div>
-              Location: <a href="https://www.google.ch/maps/place/Kulturzentrum+Galvanik+Zug/@47.1806677,8.4793163,15.63z/data=!4m5!3m4!1s0x4790008287ec52bb:0xe036ad5c7aa272f4!8m2!3d47.1815066!4d8.4841381">Galvanik, Zug</a>
+              Location: <a href="https://www.google.ch/maps/place/Kulturzentrum+Galvanik+Zug/@47.1806677,8.4793163,15.63z/data=!4m5!3m4!1s0x4790008287ec52bb:0xe036ad5c7aa272f4!8m2!3d47.1815066!4d8.4841381">Galvanik, 2nd floor, Zug</a>
             </div>
           </section>
           <section class="description">
             <p>
-              We have an open bar. You are not allowed to bring your own alcohol. If you want to come with friends,
+              We have an open bar. You are not allowed to bring your own alcoholic drinks. If you want to come with friends,
               contact us first. No one gets in the club without an invitation.
             </p>
           </section>
