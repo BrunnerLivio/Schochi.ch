@@ -76,6 +76,7 @@
                 PHONE: +41793189773
               </div>
             </section>
+            <div ref="bottom-bank"></div>
           </section>
         </section>
       </div>
@@ -113,10 +114,16 @@ export default {
   },
   methods: {
     buyTicket() {
-      this.isBuyTicketOpened = !this.isBuyTicketOpened;
+      this.isBuyTicketOpened = true;
+      setTimeout(() => {
+        const element = this.$refs['bottom-bank'];
+        const top = element.offsetTop;
+        window.scrollTo(0, top);
+      });
     },
   },
   mounted() {
+    window.scrollTo(0, 0);
     window.document.body.style.background = '#FFB5A8';
     let lines = [
       { top: 0, left: '5vw', width: 2, height: '100%', color: '#181818', hidden: true, animation: { duration: 1000, easing: 'easeInOutSine', delay: 0, direction: 'TopBottom' } },
