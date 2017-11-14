@@ -56,6 +56,9 @@
            <section>
             <strong>Banking Information</strong>
             <div>
+              NAME: Livio brunner
+            </div>
+            <div>
               IBAN: CHXXXX XXXX XXXX XXXX
             </div>
             <div>
@@ -67,7 +70,7 @@
            </section>
            <section class="banking-problems">
               <strong>
-                Contact For Banking Questions
+                Contact For Questions
               </strong>
               <div>
                 MAIL: <a href="mail:livio.brunner.lb1@gmail.com">livio.brunner.lb1@gmail.com</a>
@@ -277,11 +280,14 @@ export default {
         margin-left: 0;
         width: calc(100% - 30px);
       }
+      strong {
+        text-transform: uppercase;
+      }
       &.active {
         display: block;
       }
       .banking-problems {
-        margin-top: 10px;
+        margin-top: 20px;
       }
       a {
         color: #181818;
