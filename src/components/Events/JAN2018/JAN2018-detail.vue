@@ -53,32 +53,53 @@
             </button>
           </section>
           <section class="buy-ticket" v-bind:class="{ active: isBuyTicketOpened }">
-           <section>
-            <strong>Banking Information</strong>
-            <div>
-              NAME: Livio brunner
-            </div>
-            <div>
-              IBAN: CHXXXX XXXX XXXX XXXX
-            </div>
-            <div>
-              AMOUNT: CHF 10.-
-            </div>
-            <div>
-              PAYMENT PURPOSE: <i>your name</i>
-            </div>
-           </section>
-           <section class="banking-problems">
-              <strong>
-                Contact For Questions
-              </strong>
-              <div>
-                MAIL: <a href="mail:livio.brunner.lb1@gmail.com">livio.brunner.lb1@gmail.com</a>
-              </div>
-              <div>
-                PHONE: +41793189773
-              </div>
-            </section>
+            <form id="gform" method="POST" action="https://formspree.io/livio.brunner.lb1@gmail.com">
+              <section class="personal-information">
+                <div>
+                    <strong>Personal Information</strong>
+                </div>
+                <div>
+                  <label for="name">Fullname:</label><input required v-model="fullname" name="name" type="name" />
+                </div>
+                <div>
+                  <label for="email">Email:</label><input required name="email" type="email" />
+                </div>
+                
+              </section>
+              <section class="banking-information">
+                <strong>Banking Information</strong>
+                <div>
+                  NAME: Livio Fabian Brunner
+                </div>
+                <div>
+                  IBAN: CH750 0273 2731 2879 8M2Z
+                </div>
+                <div>
+                  BIC: UBSWCHZH80A
+                </div>
+                <div>
+                  AMOUNT: CHF 10.-
+                </div>
+                <div>
+                  PAYMENT PURPOSE: {{fullname}}<i v-if="!fullname">your name</i>
+                </div>
+              </section>
+              <section class="banking-problems">
+                <strong>
+                  Contact For Questions
+                </strong>
+                <div>
+                  MAIL: <a href="mail:livio.brunner.lb1@gmail.com">livio.brunner.lb1@gmail.com</a>
+                </div>
+                <div>
+                  PHONE: +41793189773
+                </div>
+              </section>
+              <div class="on-guestlist">
+                  <label for="on-guestlist">Yes, I am on the Guestlist / Facebook Group</label><input id="on-guestlist" required name="on-guestlist" type="checkbox" />
+               </div>
+              <input type="submit" value="Buy" />
+            </form>
             <div ref="bottom-bank"></div>
           </section>
         </section>
@@ -94,6 +115,7 @@ export default {
   name: 'JAN2018-detail',
   data() {
     return {
+      fullname: '',
       isBuyTicketOpened: false,
       djs: [
         {
@@ -248,7 +270,7 @@ export default {
       margin-top: 25px;
       margin-bottom: 10px;
     }
-    button {
+    button, input[type="submit"] {
       height: 50px;
       background: #181818;
       transition: 0.1s ease-in-out all;
@@ -276,17 +298,54 @@ export default {
       width: 100%;
       padding: 10px;
       display: none;
+      .on-guestlist {
+        margin-top: 25px;
+        label {
+          font-weight: bold;
+        }
+        input[type="checkbox"] {
+          margin-left: 20px;
+          width: 15px;
+          height: 15px;
+          top: 2px;
+          position: relative;
+        }
+      }
       @media #{$break-md} {
         margin-left: 0;
         width: calc(100% - 30px);
       }
+      input[type="submit"] {
+        border: none;
+        margin-top: 12px;
+        &:hover {
+          background: #181818;
+          color: #FFB5A8;
+        }
+      }
+      .personal-information {
+        input {
+          border: 2px solid #181818;
+          background: transparent;
+          outline: none;
+          font-family: 'Roboto Mono', monospace;
+          padding: 5px;
+          font-size: 16px;
+          width: 230px;
+          margin: 5px 0;
+        }
+        label {
+          width: 100px;
+          display: inline-block;
+        }
+      } 
       strong {
         text-transform: uppercase;
       }
       &.active {
         display: block;
       }
-      .banking-problems {
+      .banking-problems, .banking-information {
         margin-top: 20px;
       }
       a {
