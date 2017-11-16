@@ -2,7 +2,7 @@
     <div class="schochi-galvanik row center-xs middle-xs">
         <div class="box row center-xs middle-xs" data-tilt>
             <div class="column inner-box">
-                <h2>SCHOCHI</h2>
+                <div class="schochi-logo"></div>
                 <div class="divider"></div>
                 <h2>GALVANIK</h2>
             </div>
@@ -45,6 +45,17 @@ $articleWidthMd: 400px;
   }
 }
 
+.schochi-logo {
+    background-image: url(../../../../static/schochi_stempel.svg);
+    width: 150px;
+    height: 60px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    @media #{$break-md} {
+        width: 200px;
+        height: 80px;
+    }
+}
 .divider {
     height: 2px; 
     width: 120%;
