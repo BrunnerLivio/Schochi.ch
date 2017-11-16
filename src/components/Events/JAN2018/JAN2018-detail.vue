@@ -18,6 +18,9 @@
           </section>
           <section class="meta-info">
             <div>
+              Date: 12.01.2018
+            </div>
+            <div>
               Pre Sale: CHF 10.-
             </div>
             <div>
