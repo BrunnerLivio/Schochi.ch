@@ -72,6 +72,9 @@
                   NAME: Livio Fabian Brunner
                 </div>
                 <div>
+                  BANK: UBS AG
+                </div>
+                <div>
                   IBAN: CH750 0273 2731 2879 8M2Z
                 </div>
                 <div>
@@ -119,19 +122,19 @@ export default {
       isBuyTicketOpened: false,
       djs: [
         {
-          name: 'Dario Baumgartner',
+          name: 'Juhani',
           time: '23:00',
         },
         {
-          name: 'Micha El',
+          name: 'Migu',
           time: '00:00',
         },
         {
-          name: 'Ismail Abdullahi',
+          name: 'Ismail',
           time: '01:30',
         },
         {
-          name: 'Никола Леру',
+          name: 'Nicola Leroux',
           time: '04:00',
         },
       ],
@@ -283,6 +286,8 @@ export default {
       cursor: pointer;
       outline: none;
       width: calc(50% - 5px);
+      border-radius: 0px !important;
+      -webkit-appearance: none;
       @media #{$break-md} {
         width: 150px;
       }
@@ -333,6 +338,7 @@ export default {
           font-size: 16px;
           width: 230px;
           margin: 5px 0;
+          border-radius: 0px !important;
         }
         label {
           width: 100px;
