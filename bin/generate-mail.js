@@ -15,6 +15,6 @@ fs.readFile('src/mail/template.hbs', 'utf8', (err, data) => {
     console.log(result({
         name: process.argv[3],
         date: moment().format("DD.MM.YY"),
-        hash: crypto.createHash('sha1').update(current_date + random).digest('hex')
+        hash: crypto.createHash('sha1').update(current_date + random).digest('hex').substring(0,8)
     }));
 });
