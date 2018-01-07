@@ -1,4 +1,5 @@
 build/*.js
 config/*.js
+bin/*.js
 
 src/components/shared/lineMaker.js
