@@ -51,11 +51,11 @@
                 Contact
               </button>
             </a>
-            <button v-on:click="buyTicket()">
+            <!-- <button v-on:click="buyTicket()">
               Buy Ticket
-            </button>
+            </button> -->
           </section>
-          <section class="buy-ticket" v-bind:class="{ active: isBuyTicketOpened }">
+          <!-- <section class="buy-ticket" v-bind:class="{ active: isBuyTicketOpened }">
             <form id="gform" method="POST" action="https://formspree.io/livio.brunner.lb1@gmail.com">
               <section class="personal-information">
                 <div>
@@ -107,7 +107,7 @@
               <input type="submit" value="Buy" />
             </form>
             <div ref="bottom-bank"></div>
-          </section>
+          </section> -->
         </section>
       </div>
     </div>
