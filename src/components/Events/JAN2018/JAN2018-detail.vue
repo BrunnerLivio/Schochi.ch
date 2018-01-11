@@ -13,7 +13,7 @@
               If you want to come with friends, contact one of the organizers. No one gets in the club without an invitation.
             </p>
             <p>
-              There is no garderobe, but there are sofas.
+              We will provide a garderobe, but do not take any responsibility if anything gets stolen.
             </p>
           </section>
           <section class="meta-info">
@@ -21,10 +21,10 @@
               Date: 12.01.2018
             </div>
             <div>
-              Pre Sale: CHF 10.-
+              Pre Sale: CHF 10.- (Not available anymore)
             </div>
             <div>
-              Evening Sale: CHF 13.-
+              Evening Sale: CHF 15.-
             </div>
             <div>
                 Age: 18
