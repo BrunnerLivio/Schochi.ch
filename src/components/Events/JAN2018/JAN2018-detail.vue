@@ -199,8 +199,13 @@ export default {
     }, 500);
   },
   beforeDestroy() {
-    this.lineMaker.hideLines();
     window.document.body.style.background = '';
+    this.lineMaker.animateLinesOut();
+    this.lineMaker.hideLines();
+    setTimeout(() =>
+      Array.prototype.forEach.call(
+        document.querySelectorAll('.decolines'), node =>
+          node.parentNode.removeChild(node)));
   },
 };
 </script>

@@ -9,6 +9,25 @@
         </div>
         <div class="row center-xs middle-xs">
           <article>
+            <router-link to="april2018">
+              <div class="date">
+                <span class="dark">APRIL</span>
+                <span class="light">SAT 14</span>
+              </div>
+            </router-link>
+            <router-link to="april2018">
+              <apr2018></apr2018>
+            </router-link>
+          </article>
+        </div>
+        <div>
+          <h2 class="upcoming-events">
+            <span class="light">Past</span>
+            <span class="dark"> Events</span>
+          </h2>
+        </div>
+        <div class="row center-xs middle-xs">
+          <article>
             <router-link to="january2018">
               <div class="date">
                 <span class="dark">JANUARY</span>
@@ -28,10 +47,12 @@
 </template>
 <script>
 import JAN2018 from '../Events/JAN2018/JAN2018';
+import APR2018 from '../Events/APR2018/APR2018';
 
 export default {
   name: 'Home',
   components: {
+    apr2018: APR2018,
     jan2018: JAN2018,
   },
 };
