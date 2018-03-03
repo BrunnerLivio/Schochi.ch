@@ -7,7 +7,7 @@ import fourzerofour from '@/components/404/404';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -17,11 +17,17 @@ export default new Router({
     {
       path: '/january2018',
       name: 'JAN2018',
+      meta: {
+        title: 'Schochi x Galvanik',
+      },
       component: JAN2018Detail,
     },
     {
       path: '/april2018',
       name: 'APR2018',
+      meta: {
+        title: 'Schochi - Zug Entgleist',
+      },
       component: APR2018Detail,
     },
     {
@@ -35,3 +41,10 @@ export default new Router({
     },
   ],
 });
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || 'Schochi';
+  next();
+});
+
+export default router;
