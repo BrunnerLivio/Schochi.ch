@@ -12,7 +12,7 @@
             <router-link to="april2018">
               <div class="date">
                 <span class="dark">APRIL</span>
-                <span class="light">SAT 14</span>
+                <span class="light">FRI 13</span>
               </div>
             </router-link>
             <router-link to="april2018">

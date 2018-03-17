@@ -8,7 +8,7 @@
     <section class="meta-info">
       <p>
         <div>
-          Datum: 14.04.2018
+          Datum: 13.04.2018
         </div>
         <div>
           Abend Verkauf: CHF 15.-
@@ -28,10 +28,49 @@
       </p>
     </section>
     <section class="description">
+      <strong>
+Schochibar zu Gast in der Lounge & Gallery. 
+      </strong>
       <p>
-        En schöni Beschriebig
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora fuga ducimus explicabo voluptatibus delectus quae odit earum iusto eaque, id sapiente assumenda debitis mollitia aperiam cum reiciendis vero a. Temporibus!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis mollitia perspiciatis? Iste unde quas est iure aspernatur ratione veniam et, excepturi deserunt tenetur temporibus voluptates nihil placeat officia? Provident?
+Schochibar ist ein Kollektiv aus Freunden, die etwas Neues dem Zuger Nacht- und Kulturleben bieten wollen. Zug ist entgleist und wir bringen das Ganze auf eine andere Schiene. 
+Freut euch auf einen familiären Abend zu den Klängen von House und Minimal House.
+
+      </p>
+<strong>
+Schochibar presents: 
+</strong>
+<div>
+  <div>
+    <a href="https://www.residentadvisor.net/dj/andre-ch">And.re</a>
+  </div>
+  Round The Corner, Zürich
+</div>
+
+<strong>
+Residents:
+</strong>
+<div>
+Leroux
+</div>
+<div>
+Michgail 
+</div>
+
+<p>
+<div>
+Entry: CHF 15
+  </div>
+<div>
+Friendslist: CHF 10
+</div>
+</p>
+
+
+
+See you on the dancefloor
+<div>
+tanzen ist treumen mit die beine
+</div>
       </p>
     </section>
   </main>
@@ -126,6 +165,10 @@ export default {
   }
 }
 
+a {
+  color: #dd2e44;
+}
+
 .meta-info {
   background: #ff886c;
   position: absolute;
@@ -146,7 +189,7 @@ export default {
     width: 600px;
   }
   @media #{$break-md} {
-    font-size: 30px;
+    font-size: 24px;
     top: initial;
     right: 0;
     bottom: -170px;
@@ -165,7 +208,8 @@ export default {
   position: absolute;
   text-align: center;
   top: 1280px;
-  font-size: 22px;
+  font-size: 18px;
+  
   p {
     margin: 20px;
   }
@@ -193,11 +237,12 @@ export default {
     }
   }
   @media #{$break-md} {
-    font-size: 24px;
+    font-size: 18px;
     width:700px;
     margin-left: 0;
-    top: 300px;
+    top: 240px;
     left: 20%;
+    padding-top: 20px;
   }
 
 }
