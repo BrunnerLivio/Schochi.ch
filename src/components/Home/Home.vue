@@ -1,13 +1,21 @@
 <template>
   <div class="column">
     <main class="wrap container-fluid">
-        <div>
+        <!-- <div>
           <h2 class="upcoming-events">
             <span class="light">Upcoming</span>
             <span class="dark"> Event</span>
           </h2>
+        </div> -->
+        <!-- <div class="row center-xs middle-xs">
+        </div> -->
+        <div>
+          <h2 class="upcoming-events">
+            <span class="light">Past</span>
+            <span class="dark"> Events</span>
+          </h2>
         </div>
-        <div class="row center-xs middle-xs">
+        <div class="column center-xs middle-xs">
           <article>
             <router-link to="april2018">
               <div class="date">
@@ -15,18 +23,12 @@
                 <span class="light">FRI 13</span>
               </div>
             </router-link>
-            <router-link to="april2018">
-              <apr2018></apr2018>
-            </router-link>
+            <div class="row center-xs middle-xs">
+              <router-link class="row center-xs middle-xs" to="april2018">
+                <apr2018></apr2018>
+              </router-link>
+            </div>
           </article>
-        </div>
-        <div>
-          <h2 class="upcoming-events">
-            <span class="light">Past</span>
-            <span class="dark"> Events</span>
-          </h2>
-        </div>
-        <div class="row center-xs middle-xs">
           <article>
             <router-link to="january2018">
               <div class="date">
@@ -34,14 +36,25 @@
                 <span class="light">FRI 12</span>
               </div>
             </router-link>
-            <router-link to="january2018">
-              <jan2018></jan2018>
-            </router-link>
+            <div class="row center-xs middle-xs">
+              <router-link to="january2018">
+                <jan2018></jan2018>
+              </router-link>
+            </div>
           </article>
         </div>
       </main>
-      <footer>
-        <span class="light">website by </span> <a class="dark" href="https://brunnerliv.io" target="_blank">livio brunner</a>
+      <footer class="column">
+
+        <div class="layout-margin">
+          <span class="light">Schochibar on</span>
+          <a href="https://www.facebook.com/Schochibar/">Facebook</a>
+          <span class="light">-</span>
+          <a href="https://www.instagram.com/schochibar/">Instagram</a>
+        </div>
+        <div>
+          <span class="light">Website by </span> <a class="dark" href="https://brunnerliv.io" target="_blank">Livio Brunner</a>
+        </div>
       </footer>
   </div>
 </template>
@@ -66,12 +79,17 @@ main {
     min-height: calc(100vh - #{$footer-height});
 }
 
+article {
+  margin-bottom: 30px;
+}
+
 footer {
   width: 100%;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   color: #7A7A7A;
   margin-top: 20px;
+  margin-bottom: 20px;
   a{
     color: #7A7A7A;
   }
