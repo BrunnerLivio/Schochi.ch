@@ -1,14 +1,27 @@
 <template>
   <div class="column">
     <main class="wrap container-fluid">
-        <!-- <div>
+        <div>
           <h2 class="upcoming-events">
             <span class="light">Upcoming</span>
             <span class="dark"> Event</span>
           </h2>
-        </div> -->
-        <!-- <div class="row center-xs middle-xs">
-        </div> -->
+        </div>
+        <div class="row center-xs middle-xs">
+          <article>
+            <router-link to="oct2018">
+              <div class="date">
+                <span class="dark">OCT</span>
+                <span class="light">SA 06</span>
+              </div>
+            </router-link>
+            <div class="row center-xs middle-xs">
+              <router-link class="row center-xs middle-xs" to="oct2018">
+                <oct2018></oct2018>
+              </router-link>
+            </div>
+          </article>
+        </div>
         <div>
           <h2 class="upcoming-events">
             <span class="light">Past</span>
@@ -61,12 +74,14 @@
 <script>
 import JAN2018 from '../Events/JAN2018/JAN2018';
 import APR2018 from '../Events/APR2018/APR2018';
+import OCT2018 from '../Events/OCT2018/OCT2018';
 
 export default {
   name: 'Home',
   components: {
     apr2018: APR2018,
     jan2018: JAN2018,
+    oct2018: OCT2018,
   },
 };
 </script>
