@@ -9,6 +9,27 @@
         </div>
         <div class="row center-xs middle-xs">
           <article>
+            <router-link to="nov2018">
+              <div class="date">
+                <span class="dark">NOV</span>
+                <span class="light">FRI 09</span>
+              </div>
+            </router-link>
+            <div class="row center-xs middle-xs">
+              <router-link class="row center-xs middle-xs" to="nov2018">
+                <nov2018></nov2018>
+              </router-link>
+            </div>
+          </article>
+        </div>
+        <div>
+          <h2 class="upcoming-events">
+            <span class="light">Past</span>
+            <span class="dark"> Events</span>
+          </h2>
+        </div>
+        <div class="row center-xs middle-xs">
+          <article>
             <router-link to="oct2018">
               <div class="date">
                 <span class="dark">OCT</span>
@@ -21,12 +42,6 @@
               </router-link>
             </div>
           </article>
-        </div>
-        <div>
-          <h2 class="upcoming-events">
-            <span class="light">Past</span>
-            <span class="dark"> Events</span>
-          </h2>
         </div>
         <div class="column center-xs middle-xs">
           <article>
@@ -75,6 +90,7 @@
 import JAN2018 from '../Events/JAN2018/JAN2018';
 import APR2018 from '../Events/APR2018/APR2018';
 import OCT2018 from '../Events/OCT2018/OCT2018';
+import NOV2018 from '../Events/NOV2018/NOV2018';
 
 export default {
   name: 'Home',
@@ -82,6 +98,7 @@ export default {
     apr2018: APR2018,
     jan2018: JAN2018,
     oct2018: OCT2018,
+    nov2018: NOV2018,
   },
 };
 </script>

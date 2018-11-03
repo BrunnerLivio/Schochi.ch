@@ -2,6 +2,7 @@ import Home from '@/components/Home/Home';
 import JAN2018Detail from '@/components/Events/JAN2018/JAN2018-detail';
 import APR2018Detail from '@/components/Events/APR2018/APR2018-detail';
 import OCT2018Detail from '@/components/Events/OCT2018/OCT2018-detail';
+import NOV2018Detail from '@/components/Events/NOV2018/NOV2018-detail';
 import Router from 'vue-router';
 import Vue from 'vue';
 import fourzerofour from '@/components/404/404';
@@ -35,9 +36,17 @@ const router = new Router({
       path: '/oct2018',
       name: 'OCT2018',
       meta: {
-        title: '$poiled - Schochi x Doodag',
+        title: '$poiled - Schochi x Doodah',
       },
       component: OCT2018Detail,
+    },
+    {
+      path: '/nov2018',
+      name: 'NOV2018',
+      meta: {
+        title: '$poiled - Schochi x Doodag',
+      },
+      component: NOV2018Detail,
     },
     {
       path: '/404',
