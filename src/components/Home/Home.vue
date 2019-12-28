@@ -1,27 +1,12 @@
 <template>
   <div class="column">
     <main class="wrap container-fluid">
-        <div>
+        <!-- <div>
           <h2 class="upcoming-events">
             <span class="light">Upcoming</span>
             <span class="dark"> Event</span>
           </h2>
-        </div>
-        <div class="row center-xs middle-xs">
-          <article>
-            <router-link to="nov2018">
-              <div class="date">
-                <span class="dark">NOV</span>
-                <span class="light">FRI 09</span>
-              </div>
-            </router-link>
-            <div class="row center-xs middle-xs">
-              <router-link class="row center-xs middle-xs" to="nov2018">
-                <nov2018></nov2018>
-              </router-link>
-            </div>
-          </article>
-        </div>
+        </div> -->
         <div>
           <h2 class="upcoming-events">
             <span class="light">Past</span>
@@ -131,7 +116,7 @@ footer {
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   margin-bottom: 10px;
-  
+
 }
 .light {
   color: rgba(255,255,255, 0.8);
